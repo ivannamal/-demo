@@ -1,0 +1,33 @@
+.btn{
+    font-size: 1.5rem;
+    padding: 0.2em 1em;
+    color: #3f3939;
+   <!-- transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s; -->
+    transition: all 0.3s;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    background-color: #3f3939;
+    color: aliceblue;
+}
+.badge{
+    margin: 0;
+    font-size: 1rem;
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    background-color: #7300ff;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+.badge:hover{
+    transform: translateY(-45px);
+    background-color: blue;
+    color: aliceblue;
+}
