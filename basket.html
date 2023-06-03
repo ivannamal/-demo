@@ -1,29 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="ua">
 <head>
-  <meta lang = "uk"/>
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="style.css">
   <title>Магазин</title>
 </head>
 <body>
-  <div class="product">
-    <h2>Сир</h2>
-    <button class="btn" >Додати </button>
+<div class="all">
+<div class="menu-container">
+  <div class="box">
+  <div class="search-container">
+    <input type="search" class="search-input" placeholder="Назва товару">
+    <button class="search-button tooltip" data-tooptip="Продукт">Додати</button>
   </div>
+    <hr>
 
-  <div class="product">
-    <h2>Помідори</h2>
-    <button class="btn" >Додати</button>
+  <div class="product-container">
+    <p> <del>Помідори</del></p>
+      <div class="quantity">
+
+      <span class="product-item1">
+		2
+    </span>
+
+      </div>
+      <div class="bought">
+    <button class="btn tooltip" data-tooptip="Купити?">Не куплено </button>
+      </div>
   </div>
+    <hr>
 
-  <div class="product">
-    <h2>Печиво</h2>
-    <button class="btn" >Додати </button>
+
+  <div class="product-container">
+    <p>Печиво</p>
+      <div class="quantity">
+      <button class="minus tooltip" data-tooptip="Зменшити" > - </button>
+      <span class="product-item1">
+		2
+    </span>
+          <button class="plus tooltip" data-tooptip="Збільшити"> + </button>
+      </div>
+      <div class="bought">
+    <button class="btn tooltip" data-tooptip="Придбано">Куплено </button>
+    <button class="cross tooltip" data-tooptip="Викласти?" > x </button>
+      </div>
   </div>
+    <hr>
+  <div class="product-container">
+    <input>
+      <div class="quantity">
+      <button id="bleak" class="minus tooltip" data-tooptip="Зменшити"> - </button>
+      <span class="product-item1">
+		1
+    </span>
+      <button  class="plus tooltip" data-tooptip="Збільшити" > + </button>
+      </div>
+      <div class="bought">
+    <button class="btn tooltip" data-tooptip="Придбано">Куплено </button>
+    <button class="cross tooltip" data-tooptip="Викласти?" > x </button>
+      </div>
+  </div>
+  </div>
+</div>
 
-  <h2>Корзина покупок</h2>
-  <ul id="cart"></ul>
-  <span class="badge"><h1>BuyList</h1> Author:<br>Ivanna Malashchuk</span>
+
+
+<div class="Basket">
+  <div class="box">
+  <h2>Залишилося</h2>
+    <hr>
+    <div class="cookieNcheese">
+  <span class="product-item">
+		Печиво
+		<span class="amount">2</span>
+	</span>
+    <span class="product-item">
+		Сир
+		<span class="amount">1</span>
+	</span>
+    </div>
+    <hr>
+<h2>Куплено</h2>
+    <hr>
+<span class="product-item">
+  <del>Помідори</del>
+		<span class="amount">2</span>
+	</span>
+</div>
+</div>
+</div>
+
+  <span content="Ivanna Malashchuk" class="badge"><h1>BuyList</h1> Author:<br>Ivanna Malashchuk</span>
 </body>
 </html>
