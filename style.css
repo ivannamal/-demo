@@ -43,11 +43,18 @@
     color: aliceblue;
 }
 @media print {
-    .badge {
-        background-color: white !important;
-        content: "Ваше ім'я";
+    .print-name {
+        display: none;
+    }
+    .badge::after {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        border-color: #7300ff;
+        content: "Ivanna Malashchuk";
     }
 }
+
 .product-item {
     background-color: #e8e4e4;
     display: inline-block;
