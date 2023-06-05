@@ -29,31 +29,47 @@
 .badge{
     margin: 0;
     font-size: 1rem;
-    position: absolute;
-    bottom: -55px;
-    left: 0;
+    position: fixed;
+    bottom: -70px;
+    left: 50px;
+    z-index: 3;
     background-color: #7300ff;
     color: white;
     padding: 20px 40px;
     text-align: center;
     border-radius: 22px;
-    transition: all 0.3s;
+    transition: all 1s;
+}
+.badge::before {
+    display: block;
+    content: "Buy list";
+    font-size: 22px;
+    font-weight: bold;
+}
+.print-name {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.author {
+    display: block;
+    font-size: 18px;
 }
 .badge:hover{
-    transform: translateY(-45px);
+    transform: translateY(-55px);
     background-color: blue;
     color: aliceblue;
 }
 @media print {
-    .print-name {
-        display: none;
+    .badge::before {
+        content: "";
     }
-    .badge::after {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        border-color: #7300ff;
-        content: "Ivanna Malashchuk";
+    .badge {
+        border: 1px solid #af01da;
+        background-color: white;
+        color: black;
+        bottom: 0px;
     }
 }
 
@@ -78,7 +94,8 @@
     background-color: #e8e4e4;
     display: inline-block;
     height: 10px;
-
+    align-content: center;
+    text-align: center;
     padding: 15px;
     border-radius: 5px;
     justify-content: center;
