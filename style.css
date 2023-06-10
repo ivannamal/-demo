@@ -166,8 +166,10 @@ html {background-color: darkgrey}
 }
 .all{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 5px;
+    width: 1175px;
+
 }
 .bought{
     margin: 0;
@@ -237,4 +239,33 @@ body{
     opacity: 1;
     visibility: visible;
     transition: all 0.3s;
+}
+
+@media (max-width:1175px){
+    .all {
+        margin: 0px;
+        width: 100%;
+        transform: translateX(-6px);
+    }
+
+    .Basket {
+        margin-left: 1vw;
+    }
+
+    .menu-container {
+        margin-right: 1vw;
+    }
+}
+@media (max-width:600px){
+    .all {
+        flex-direction: column;
+        width: 95vw;
+        padding-right: 127px;
+        margin-right: 100px;
+    }
+
+    .menu-container, .Basket {
+        width: 95vw;
+        margin: 10px;
+    }
 }
